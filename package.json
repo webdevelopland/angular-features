@@ -1,0 +1,13 @@
+{
+  "name": "angular-modules",
+  "version": "0.0.1",
+  "description": "Angular services and components",
+  "scripts": {
+    "start": "node express.js"
+  },
+  "author": {
+    "name": "Web Developland",
+    "email": "webdevelopland@protonmail.com"
+  },
+  "license": "MIT"
+}
