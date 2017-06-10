@@ -1,9 +1,9 @@
 {
   "name": "angular-modules",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Angular services and components",
   "scripts": {
-    "start": "node express.js"
+    "test": "echo \"created by webdevelopland\""
   },
   "author": {
     "name": "Web Developland",
