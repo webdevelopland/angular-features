@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Subscribe } from "@/service/subscribe";
+import { Subscribe } from "@/services/subscribe";
 import * as js from "libraryjs";
 
 @Injectable()

@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Router } from "@angular/router";
-import { Subscribe } from "@/service/subscribe";
+import { Subscribe } from "@/services/subscribe";
 import * as js from "libraryjs";
 
 declare var $:any;

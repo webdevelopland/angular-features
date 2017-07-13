@@ -1,6 +1,6 @@
 {
   "name": "angular-modules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Angular services and components",
   "scripts": {
     "test": "echo \"created by webdevelopland\""

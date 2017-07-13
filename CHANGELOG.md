@@ -1,3 +1,8 @@
+## v1.0.1
+14 jul 2017
+
+* /service -> /services
+
 ## v1.0.0
 10 june 2017
 

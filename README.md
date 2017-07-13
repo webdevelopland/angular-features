@@ -1,4 +1,4 @@
 # angular-modules
-### v1.0.0 ( last update: 10 june 2017 )
+### v1.0.1 ( last update: 14 jul 2017 )
 
 Angular services and components.
