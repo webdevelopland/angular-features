@@ -1,3 +1,10 @@
+## v1.1.0
+28 jul 2017
+
+* new name
+* material
+* sound service
+
 ## v1.0.1
 14 jul 2017
 
