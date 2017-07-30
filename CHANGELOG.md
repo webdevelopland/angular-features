@@ -1,9 +1,17 @@
+## v1.2.0
+30 jul 2017
+
+* Web Socket
+* ws service
+* new subscribe logic
+
 ## v1.1.0
 28 jul 2017
 
 * new name
 * material
 * sound service
+* v1.1.1 readme fix
 
 ## v1.0.1
 14 jul 2017

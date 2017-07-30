@@ -27,16 +27,3 @@ export class ScrollService {
   }
 
 }
-
-@Injectable()
-export class SubScrollService extends Subscribe {
-
-  constructor(
-    private scroll:ScrollService
-  ) {
-    super();
-    var f = this;
-    f.service = scroll;
-  }
-
-}

@@ -28,16 +28,3 @@ export class KeyService {
   }
 
 }
-
-@Injectable()
-export class SubKeyService extends Subscribe {
-
-  constructor(
-    private key:KeyService
-  ) {
-    super();
-    var f = this;
-    f.service = key;
-  }
-
-}

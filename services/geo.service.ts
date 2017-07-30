@@ -43,16 +43,3 @@ export class GeoService {
   }
 
 }
-
-@Injectable()
-export class SubGeoService extends Subscribe {
-
-  constructor(
-    private geo:GeoService
-  ) {
-    super();
-    var f = this;
-    f.service = geo;
-  }
-
-}

@@ -39,16 +39,3 @@ export class RouterService {
   }
 
 }
-
-@Injectable()
-export class SubRouterService extends Subscribe {
-
-  constructor(
-    private router:RouterService
-  ) {
-    super();
-    var f = this;
-    f.service = router;
-  }
-
-}

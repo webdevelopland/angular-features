@@ -1,14 +1,13 @@
 import * as js from "libraryjs";
 
 export class Subscribe {
-
   service:any;
   events:any;
 
-  constructor() {
+  constructor( service:any ) {
     var f = this;
 
-    f.service = {};
+    f.service = service;
     f.events = {};
   }
 
@@ -29,6 +28,14 @@ export class Subscribe {
 
     f.service.events[event].remove( f.events[event] );
     delete f.events[event];
+  }
+
+  run() {
+    var f = this;
+
+    for(let event in f.events) {
+      f.service.events[event].pick(f.events[event]);
+    }
   }
 
   remove() {
