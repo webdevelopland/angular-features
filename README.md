@@ -1,4 +1,4 @@
 # angular-features
-### v1.2.0 ( last update: 30 jul 2017 )
+### v1.3.0 ( last update: 8 aug 2017 )
 
 Angular extra features
