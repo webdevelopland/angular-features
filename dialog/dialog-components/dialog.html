@@ -1,0 +1,11 @@
+<div class="dialog-container" *ngIf="!isHidden">
+  <div class="bg" (click)="fadeOut()" [style.opacity]="css.opacity"></div>
+  <dynamic-component class="dialog" [componentData]="componentData"
+    [style.width.px]="css.width"
+    [style.height.px]="css.height"
+    [style.marginTop.px]="css.marginTop"
+    [style.opacity]="css.opacity"
+    [style.transition]="css.transition"
+  >  
+  </dynamic-component>
+</div>
