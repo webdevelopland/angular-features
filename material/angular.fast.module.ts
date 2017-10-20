@@ -1,8 +1,17 @@
+// import all Angular Modules
+
 // ...
 
 // —————————————————————— Material ——————————————————————
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatCardModule, MatInputModule, MatButtonModule, MatSelectModule, MatProgressSpinnerModule, MatIconModule } from "@angular/material";
+
+import * as MaterialLibrary from "@angular/material";
+var material = [];
+for(let name in MaterialLibrary) {
+  if ( name.search( /^Mat[a-z]+Module$/i ) !== -1)
+  material.push(MaterialLibrary[name]);
+}
+
 import "hammerjs";
 
 // ...
@@ -15,12 +24,10 @@ import "hammerjs";
   imports: [
     // ...
 
-    // Angular Material:
     BrowserAnimationsModule,
-    MatCardModule, MatInputModule, MatButtonModule, MatSelectModule, MatProgressSpinnerModule, MatIconModule,
 
     // ...
-  ],
+  ].concat(material),
   providers: [
     // ...
   ],

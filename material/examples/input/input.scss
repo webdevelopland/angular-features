@@ -1,0 +1,14 @@
+#input-example {
+  h2 {
+    font-family: $default-font;
+  }
+  mat-card {
+    margin-bottom: 10px;
+  }
+  >.info {
+    padding: 15px;
+    span {
+      font-family: $default-font;
+    }
+  }
+}

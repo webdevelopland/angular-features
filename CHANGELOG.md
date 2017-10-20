@@ -1,3 +1,9 @@
+## v1.5.0
+20 oct 2017
+
+* material update
+* repaptcha fix
+
 ## v1.4.0
 10 aug 2017
 
