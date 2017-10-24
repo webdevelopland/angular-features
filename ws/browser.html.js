@@ -19,8 +19,9 @@
     console.log("Reason: " + event.reason);
   };
 
-  ws.onmessage = function(event) {
-    console.log(event.data);
+  ws.onmessage = function(res) {
+    var msg = res.data;
+    console.log(msg);
   };
 
   ws.onerror = function(error) {

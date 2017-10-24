@@ -8,43 +8,37 @@ import { Subscribe } from "@/services/subscribe";
   templateUrl: "./template.html"
 })
 export class WebSocketComponent {
-  subs:any = {};
-
+  data:any = {};
+  wss:Subscribe;
+  isConnected:boolean = false;
   constructor(
-    public title:Title,
-    public router:RouterService,
     public ws:WebSocketService
   ) {
-    var f = this;
-    f.title.setTitle("Second Page");
+    this.wss = new Subscribe(ws);
+    this.connect();
+  }
 
-    f.subs.ws =       new Subscribe(ws);
-    f.subs.router =   new Subscribe(router);
-
+  connect() {
     var HOST = location.origin.replace(/^http/, "ws") + "/ws";
-    ws.connect(HOST, () => {
-      console.log("ws server has been connected");
+    this.ws.connect(HOST, () => {
+      this.isConnected = true;
 
-      f.subs.ws.subscribe("message", (id, res) => {
-        console.log(res.data);
+      this.wss.subscribe("message", (res) => {
+        var msg = res.data;
+        console.log(msg);
       });
 
-      f.subs.ws.subscribe("close", (id, event) => {
-        console.log("ws server has been closed");
+      this.wss.subscribe("close", (event) => {
+        // ...
       });
 
-      ws.send("test message");
-    });
+      this.ws.send("sup");
 
-    f.subs.router.subscribe("refresh", () => {
-      f.subs.ws.remove();
-      f.ws.close();
     });
   }
 
   close() {
-    var f = this;
-    f.ws.close();
+    this.ws.close();
   }
 
 }
